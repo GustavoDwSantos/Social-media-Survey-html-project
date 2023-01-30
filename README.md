@@ -1,6 +1,6 @@
 # Social Media Survey
 
-### Inglish :us:
+### English :us:
 ---
 
 ## Description
