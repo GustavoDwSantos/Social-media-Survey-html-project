@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Social Media Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Social Media Survey</h1>
+        <p id="description">Teste</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">  
+                    Name:
+                    <input type="text" id="name" placeholder="Insert your name here" required/>
+                </label>
+                <label for="email" id="email-label">
+                    Email
+                    <input type="email" id="email" placeholder="Insert your email here." required/>
+                </label>
+                <label for="number" id="number-label">
+                    Age
+                    <input type="number" id="number" min="13" max="120" placeholder="Insert your age here"/>
+                </label>
+                <label for="dropdown">Gender
+                    <select name="" id="dropdown">
+                        <option value=""></option>
+                        <option value="1">Female</option>
+                        <option value="2">Male</option>
+                        <option value="3">Other</option>
+                        <option value="4">Rather not answer</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>    
+            <label for="30">
+                <input type="radio" name="time" id="30" value="30"/>
+                30 Mins
+            </label>
+            <label for="100">
+                <input type="radio" name="time" id="100" value="100"/>
+                1 Hour
+            </label>
+            <label for="200">
+                <input type="radio" name="time" id="200" value="200">
+                2 Hours
+            </label>
+            </fieldset>
+
+            <fieldset>
+            <label for="twitter">
+                <input type="checkbox" name="social-media" value="twitter" id="twitter">
+                Twitter 
+            </label>
+            <label for="facebook">
+                <input type="checkbox" name="social-media" value="facebook" id="facebook">
+                Facebook
+            </label>
+            <label for="whatsapp">
+                <input type="checkbox" name="social-media" value="whatsapp" id="whatsapp">
+                Whatsapp
+            </label>
+            <label for="instagram">
+                <input type="checkbox" name="social-media" value="instagram" id="instagram">
+                Instagram
+            </label>
+            </fieldset> 
+
+            <fieldset>
+                <label for="comment">
+                    <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </body>
+
+</html>
