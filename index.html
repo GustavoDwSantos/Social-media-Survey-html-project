@@ -7,23 +7,23 @@
     </head>
     <body>
         <h1 id="title">Social Media Survey</h1>
-        <p id="description">Teste</p>
+        <p id="description">research on the use of social media and time of use</p>
         <form id="survey-form">
             <fieldset>
                 <label for="name" id="name-label">  
                     Name:
-                    <input type="text" id="name" placeholder="Insert your name here" required/>
+                    <input type="text" id="name" placeholder="Insert your name here" required class="big"/>
                 </label>
                 <label for="email" id="email-label">
                     Email
-                    <input type="email" id="email" placeholder="Insert your email here." required/>
+                    <input type="email" id="email" placeholder="Insert your email here." required class="big"/>
                 </label>
                 <label for="number" id="number-label">
                     Age
-                    <input type="number" id="number" min="13" max="120" placeholder="Insert your age here"/>
+                    <input type="number" id="number" min="13" max="120" placeholder="Insert your age here" class="big"/>
                 </label>
                 <label for="dropdown">Gender
-                    <select name="" id="dropdown">
+                    <select name="" id="dropdown" class="big">
                         <option value=""></option>
                         <option value="1">Female</option>
                         <option value="2">Male</option>
@@ -32,43 +32,69 @@
                     </select>
                 </label>
             </fieldset>
-            <fieldset>    
-            <label for="30">
-                <input type="radio" name="time" id="30" value="30"/>
-                30 Mins
-            </label>
-            <label for="100">
-                <input type="radio" name="time" id="100" value="100"/>
-                1 Hour
-            </label>
-            <label for="200">
-                <input type="radio" name="time" id="200" value="200">
-                2 Hours
-            </label>
+            <fieldset>
+                <label for="subtitle">How often do you look at social media?</label>  
+                <label for="never" class="inline">
+                    <input type="radio" name="time" id="Never" value="0"/>
+                    Never
+                </label>
+                <label for="not-everyday" class="inline">
+                    <input type="radio" name="time" id="not-everyday" value="1"/>
+                    Not Everyday
+                </label>
+                <label for="once-a-day" class="inline">
+                    <input type="radio" name="time" id="once-a-day" value="2"/>
+                    Once a day
+                </label>
+                <label for="2-4-times-a-day" class="inline">
+                    <input type="radio" name="time" id="2-4-times-a-day" value="3"/>
+                    2-4 Times a day
+                </label>
+                <label for="5-10-times-a-day" class="inline">
+                    <input type="radio" name="time" id="5-10-times-a-day" value="4"/>
+                    5-10 Times a day
+                </label>
+                <label for="more" class="inline">
+                    <input type="radio" name="time" id="more" value="5"/>
+                    More than 10 times a day
+                </label>
             </fieldset>
 
             <fieldset>
-            <label for="twitter">
-                <input type="checkbox" name="social-media" value="twitter" id="twitter">
-                Twitter 
-            </label>
-            <label for="facebook">
-                <input type="checkbox" name="social-media" value="facebook" id="facebook">
-                Facebook
-            </label>
-            <label for="whatsapp">
-                <input type="checkbox" name="social-media" value="whatsapp" id="whatsapp">
-                Whatsapp
-            </label>
-            <label for="instagram">
-                <input type="checkbox" name="social-media" value="instagram" id="instagram">
-                Instagram
-            </label>
+                <label for="subtitle">What social media channels are you most active on</label>
+                <label for="twitter">
+                    <input type="checkbox" name="social-media" value="twitter" id="twitter">
+                    Twitter 
+                </label>
+                <label for="facebook">
+                    <input type="checkbox" name="social-media" value="facebook" id="facebook">
+                    Facebook
+                </label>
+                <label for="whatsapp">
+                    <input type="checkbox" name="social-media" value="whatsapp" id="whatsapp">
+                    Whatsapp
+                </label> 
+                <label for="instagram">
+                    <input type="checkbox" name="social-media" value="instagram" id="instagram">
+                    Instagram
+                </label>
+                <label for="pinterest">
+                    <input type="checkbox" name="social-media" id="pinterest" value="pinterest">
+                    Pinterest
+                </label>
+                <label for="reddit">
+                    <input type="checkbox" name="social-media" id="reddit" value="reddit">
+                    Reddit
+                </label> 
+                <label for="other">
+                    <input type="checkbox" name="social-media" id="other" value="other">
+                    Other
+                </label>             
             </fieldset> 
 
             <fieldset>
-                <label for="comment">
-                    <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+                <label for="comment">Any comments or suggestions?
+                    <textarea name="comment" id="comment" cols="30" rows="3" placeholder="Enter your comment here..."class="big"></textarea>
                 </label>
             </fieldset>
             <input type="submit" value="submit" id="submit">
